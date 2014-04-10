@@ -21,6 +21,7 @@
 		994952F618F4E70F0014C303 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994952D818F4E70F0014C303 /* UIKit.framework */; };
 		994952FE18F4E7100014C303 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 994952FC18F4E70F0014C303 /* InfoPlist.strings */; };
 		9949530018F4E7100014C303 /* JenkinsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 994952FF18F4E7100014C303 /* JenkinsTestTests.m */; };
+		B003496B7ED44A2390CB15AB /* libPods-JenkinsTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A888BE35605D45279E5BF020 /* libPods-JenkinsTestTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F31A481C6D647418BE6045D /* Pods-JenkinsTestTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenkinsTestTests.xcconfig"; path = "Pods/Pods-JenkinsTestTests.xcconfig"; sourceTree = "<group>"; };
+		993A8B0118F4EB0000DB6016 /* JenkinsTestTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JenkinsTestTests-Prefix.pch"; sourceTree = "<group>"; };
 		994952D118F4E70F0014C303 /* JenkinsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JenkinsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		994952D418F4E70F0014C303 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		994952D618F4E70F0014C303 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +56,7 @@
 		994952FB18F4E70F0014C303 /* JenkinsTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JenkinsTestTests-Info.plist"; sourceTree = "<group>"; };
 		994952FD18F4E7100014C303 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		994952FF18F4E7100014C303 /* JenkinsTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JenkinsTestTests.m; sourceTree = "<group>"; };
+		A888BE35605D45279E5BF020 /* libPods-JenkinsTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JenkinsTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 				994952F418F4E70F0014C303 /* XCTest.framework in Frameworks */,
 				994952F618F4E70F0014C303 /* UIKit.framework in Frameworks */,
 				994952F518F4E70F0014C303 /* Foundation.framework in Frameworks */,
+				B003496B7ED44A2390CB15AB /* libPods-JenkinsTestTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +91,7 @@
 				994952F918F4E70F0014C303 /* JenkinsTestTests */,
 				994952D318F4E70F0014C303 /* Frameworks */,
 				994952D218F4E70F0014C303 /* Products */,
+				4F31A481C6D647418BE6045D /* Pods-JenkinsTestTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +111,7 @@
 				994952D618F4E70F0014C303 /* CoreGraphics.framework */,
 				994952D818F4E70F0014C303 /* UIKit.framework */,
 				994952F318F4E70F0014C303 /* XCTest.framework */,
+				A888BE35605D45279E5BF020 /* libPods-JenkinsTestTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,6 +155,7 @@
 			children = (
 				994952FB18F4E70F0014C303 /* JenkinsTestTests-Info.plist */,
 				994952FC18F4E70F0014C303 /* InfoPlist.strings */,
+				993A8B0118F4EB0000DB6016 /* JenkinsTestTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -176,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9949530618F4E7100014C303 /* Build configuration list for PBXNativeTarget "JenkinsTestTests" */;
 			buildPhases = (
+				2B6361A039A8492A8AE6E1FA /* Check Pods Manifest.lock */,
 				994952EE18F4E70F0014C303 /* Sources */,
 				994952EF18F4E70F0014C303 /* Frameworks */,
 				994952F018F4E70F0014C303 /* Resources */,
+				EB26F539B462466DAC51D7F3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +209,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Apptronomy;
 				TargetAttributes = {
+					994952D018F4E70F0014C303 = {
+						DevelopmentTeam = MX49LZU2AV;
+					};
 					994952F118F4E70F0014C303 = {
 						TestTargetID = 994952D018F4E70F0014C303;
 					};
@@ -243,6 +256,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B6361A039A8492A8AE6E1FA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB26F539B462466DAC51D7F3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-JenkinsTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		994952CD18F4E70F0014C303 /* Sources */ = {
@@ -376,10 +422,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JenkinsTest/JenkinsTest-Prefix.pch";
 				INFOPLIST_FILE = "JenkinsTest/JenkinsTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,16 +438,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JenkinsTest/JenkinsTest-Prefix.pch";
 				INFOPLIST_FILE = "JenkinsTest/JenkinsTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 		9949530718F4E7100014C303 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F31A481C6D647418BE6045D /* Pods-JenkinsTestTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JenkinsTest.app/JenkinsTest";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -421,6 +474,7 @@
 		};
 		9949530818F4E7100014C303 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F31A481C6D647418BE6045D /* Pods-JenkinsTestTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JenkinsTest.app/JenkinsTest";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -456,6 +510,7 @@
 				9949530518F4E7100014C303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9949530618F4E7100014C303 /* Build configuration list for PBXNativeTarget "JenkinsTestTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +519,7 @@
 				9949530818F4E7100014C303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
